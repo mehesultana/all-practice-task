@@ -24,3 +24,12 @@ document.getElementById('add-course').addEventListener('click', function () {
 document.getElementById('course-container').addEventListener('click', function (event) {
     event.target.parentNode.removeChild(event.target);
 });
+
+// add input field
+document.getElementById('add-input').addEventListener('click', function () {
+    // console.log('add');
+    const courseInput = document.getElementById('course-number');
+    const courseNumber = courseInput.value;
+    courseInput.value = parseInt(courseNumber) + 1;
+    // console.log(courseNumber);
+});
