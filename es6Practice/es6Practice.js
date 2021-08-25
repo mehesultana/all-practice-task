@@ -40,13 +40,24 @@ const multiply = (num1, num2, num3) => num1 * num2 * num3;
 const multiplyResult = multiply(5, 10, 20);
 console.log(multiplyResult);
 
+//3.d. with two parameters but it will be a multi line arrow function. will add two to each number and then multiply the result.(make sure you return the result)
+
+//4. [home work]: javascript function declaration vs arrow function
+
+//5. array of numbers. and then map to get each elements multiplied by 5 ( must use arrow function)
+
+const numbers = [2, 5, 8, 15, 67, 10, 20, 45, 76];
+
+//6. [challenging] numbers of array. get odd numbers by using filter with arrow function
+const findOdd = [4, 7, 13, 42, 64, 75, 97, 54, 79, 23, 62];
+
+const oddNumbers = findOdd.filter((n) => n % 2);
+
+console.log(oddNumbers);
+
 /*
 
-3.d. with two parameters but it will be a multi line arrow function. will add two to each number and then multiply the result.
-make sure you return the result
-4. [home work]: javascript function declaration vs arrow function
-5. array of numbers. and then map to get each elements multiplied by 5. must use arrow function
-6. [challenging] numbers of array. get odd numbers by using filter with arrow function
+
 7. [challenging] array of objects (e.g. products). use find to get the object with price 5000.
 8. You have an object. Now use destructing to create a simple variable of any property of the object.
 9. [challenging] You have an array. Now use destructing to create a simple (or more) variable to get the third element of the array in a variable called 'three'.
