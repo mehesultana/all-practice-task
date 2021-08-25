@@ -16,13 +16,26 @@ Recently I'm learning full-stack web development .
 const add = (num1, num2) => num1 + num2;
 const sum = add(12, 45);
 console.log(sum);
-//3.a. with one parameter. will return the number after dividing by 5
 
+//3.a. with one parameter. will return the number after dividing by 5
+const dividing = (num) => {
+    const result = num / 5;
+    return result;
+};
+const dividing5 = dividing(15);
+console.log(dividing5);
+
+//3.b. with two parameters. will add two to each number and then multiply the result.
+const doMath = (a, b) => {
+    const sum = a + b;
+    const result = sum;
+    const output = sum * result;
+    return output;
+};
+const total = doMath(2, 5);
+console.log(total);
 /*
 
-
-
-3.b. with two parameters. will add two to each number and then multiply the result.
 3.c. three parameters. will multiply all three parameters
 3.d. with two parameters but it will be a multi line arrow function. will add two to each number and then multiply the result.
 make sure you return the result
