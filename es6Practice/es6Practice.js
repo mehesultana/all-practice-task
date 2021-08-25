@@ -34,9 +34,14 @@ const doMath = (a, b) => {
 };
 const total = doMath(2, 5);
 console.log(total);
+
+//3.c. three parameters. will multiply all three parameters
+const multiply = (num1, num2, num3) => num1 * num2 * num3;
+const multiplyResult = multiply(5, 10, 20);
+console.log(multiplyResult);
+
 /*
 
-3.c. three parameters. will multiply all three parameters
 3.d. with two parameters but it will be a multi line arrow function. will add two to each number and then multiply the result.
 make sure you return the result
 4. [home work]: javascript function declaration vs arrow function
