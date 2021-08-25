@@ -219,3 +219,42 @@ const person = persons.map((x) => {
 });
 
 console.log(person);
+
+//আমাকে একটা এরে  দেওয়া আছে এরের  মধ্যে অনেকগুলো সংখ্যা আছে সেই সংখ্যার মধ্যে 10 এর থেকে বড় সংখ্যা গুলো আমাকে বের করে এনে আরেকটা এরের  মধ্যে রাখতে হবে
+
+const numbers = [1, 2, 3, 5, 10, 30, 34, 50];
+
+// const largest = numbers.filter(number => number > 10)
+const largest = numbers.find((number) => number > 10);
+console.log(largest);
+
+const largestValue = [];
+
+const filter = (number) => {
+    if (number > 10) {
+        largestValue.push(number);
+        return true;
+    }
+};
+
+for (let i = 0; i < numbers.length; i++) {
+    filter(numbers[i]);
+}
+
+console.log(largestValue);
+
+const numbers = [1, 2, 3, 5, 10, 30, 34, 50];
+
+const find = (number) => {
+    if (number > 10) {
+        return number;
+    }
+};
+
+for (let i = 0; i < numbers.length; i++) {
+    let number = find(numbers[i]);
+    if (number) {
+        console.log(number);
+        break;
+    }
+}
