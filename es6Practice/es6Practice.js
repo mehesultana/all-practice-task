@@ -55,10 +55,20 @@ const oddNumbers = findOdd.filter((n) => n % 2);
 
 console.log(oddNumbers);
 
+//7. [challenging] array of objects (e.g. products). use find to get the object with price 5000.
+const products = [
+    { name: 'water bottle', price: 50, color: 'yellow' },
+    { name: 'mobile phone', price: 15000, color: 'black' },
+    { name: 'smart watch', price: 3000, color: 'black' },
+    { name: 'sticky note', price: 30, color: 'pink' },
+    { name: 'water glass', price: 3, color: 'white' },
+];
+
+const expensive = products.filter((product) => product.price > 100);
+// console.log(expensive);
+
 /*
 
-
-7. [challenging] array of objects (e.g. products). use find to get the object with price 5000.
 8. You have an object. Now use destructing to create a simple variable of any property of the object.
 9. [challenging] You have an array. Now use destructing to create a simple (or more) variable to get the third element of the array in a variable called 'three'.
 10. [optional] just a write a function with three parameters. and the last parameter will have a default parameter with value 7.
